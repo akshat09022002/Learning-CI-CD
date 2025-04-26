@@ -23,7 +23,9 @@ jobs:
           port: 22
           script: |
             cd Learning-CI-CD
+            ls
             git pull
+            ls
             npm install
             npm run build
             npm run start
