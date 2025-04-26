@@ -26,6 +26,8 @@ jobs:
             ls
             git pull
             ls
+            export PATH=$PATH:/usr/local/bin:/usr/bin
+            source ~/.nvm/nvm.sh
             npm install
             npm run build
             npm run start
