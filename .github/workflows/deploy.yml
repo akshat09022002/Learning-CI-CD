@@ -21,13 +21,4 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY}}
           port: 22
-          script: |
-            cd Learning-CI-CD
-            ls
-            git pull
-            ls
-            export PATH=$PATH:/usr/local/bin:/usr/bin
-            source ~/.nvm/nvm.sh
-            npm install
-            npm run build
-            npm run start
+          script: ./deploy.sh
