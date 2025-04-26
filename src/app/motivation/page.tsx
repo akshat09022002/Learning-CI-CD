@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function Home() {
+export default function MotivationPage() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -29,4 +29,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+} 
